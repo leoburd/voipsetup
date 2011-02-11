@@ -6,7 +6,6 @@ package = Voip Drupal
 ; contrib modules
 dependencies[] = advanced_help 
 dependencies[] = audiofield 
-dependencies[] = cck
 dependencies[] = content
 dependencies[] = fieldgroup
 dependencies[] = filefield
@@ -32,8 +31,8 @@ dependencies[] = voipscriptui
 dependencies[] = voiptwilio
 
 ; Voip Drupal add-in modules
-dependencies[] = callblast
-dependencies[] = calllist
+;dependencies[] = callblast
+;dependencies[] = calllist
 dependencies[] = voipnumber
 dependencies[] = clicktocall
 dependencies[] = messaging_voip
