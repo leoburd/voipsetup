@@ -29,19 +29,25 @@ function voipsetup_enable() {
     'advanced_help',
     // SWF Tools 
     'swftools',
-    // Services
-    'services',
     // Views
     'views',
     'views_bonus_export',
     'views_ui',
     // Voip Drupal
-    'callblast',
-    'calllist',
     'voip',
     'voipcall',
-    'voipscript',
+    'voipscriptui',
     'voiptwilio',
+    // Voip Drupal contrib
+//    'callblast',
+//    'calllist',
+    'clicktocall',
+    'messaging_voip',
+    'voipnumber',
+    // Audiofield-related
+    'audioconverter',
+    'audiorecorderfield',
+    'phonerecorderfield'
   );
   module_enable($module_list);
 }

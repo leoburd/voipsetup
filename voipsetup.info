@@ -1,29 +1,47 @@
 ; $Id$
-name = Voip Set-Up 
+name = Voip Setup 
 description = After a fresh drupal installation, run this to set up Voip Drupal. This module will enable all other modules and configure as needed. This is a rough draft for what will later become an install profile.
 package = Voip Drupal
+
+; contrib modules
+dependencies[] = advanced_help 
+dependencies[] = audiofield 
+dependencies[] = cck
 dependencies[] = content
 dependencies[] = fieldgroup
 dependencies[] = filefield
 dependencies[] = imagefield
-dependencies[] =  nodereference
-dependencies[] =  number
-dependencies[] =  optionwidgets	
-dependencies[] =  text
-dependencies[] =  date
-dependencies[] =  date_api
-dependencies[] =  date_timezone
-dependencies[] =  devel
-dependencies[] =  features 
-dependencies[] =  advanced_help 
-dependencies[] =  swftools
-dependencies[] =  services
-dependencies[] =  views
-dependencies[] =  views_ui
-dependencies[] =  callblast
-dependencies[] =  calllist
-dependencies[] =  voip
-dependencies[] =  voipcall
-dependencies[] =  voipscriptui
-dependencies[] =  voiptwilio
+dependencies[] = nodereference
+dependencies[] = number
+dependencies[] = optionwidgets	
+dependencies[] = text
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_timezone
+dependencies[] = devel
+dependencies[] = features 
+dependencies[] = swftools
+dependencies[] = services
+dependencies[] = views
+dependencies[] = views_ui
+
+; Voip Drupal modules
+dependencies[] = voip
+dependencies[] = voipcall
+dependencies[] = voipscriptui
+dependencies[] = voiptwilio
+
+; Voip Drupal add-in modules
+dependencies[] = callblast
+dependencies[] = calllist
+dependencies[] = voipnumber
+dependencies[] = clicktocall
+dependencies[] = messaging_voip
+
+; audiofield-related modules
+dependencies[] = audioconverter
+dependencies[] = audiorecorderfield
+dependencies[] = phonerecorderfield
+
+
 core = 6.x
